@@ -1,0 +1,3 @@
+Inicializando...
+npm install
+npm start
