@@ -99,7 +99,7 @@ function Pessoa() {
           type="number"
           value={tipoId}
           onChange={(e) => setTipoId(e.target.value)}
-          placeholder="Tipo ID"
+          placeholder="Tipo Sanguineo ID"
           required
         />
         <button type="submit">{id ? 'Atualizar' : 'Criar'}</button>
@@ -108,7 +108,7 @@ function Pessoa() {
         {pessoas.map(pessoa => (
           <li key={pessoa.id}>
             <span>
-              Nome: {pessoa.nome}, Rua: {pessoa.rua}, Nº: {pessoa.numero}, RG: {pessoa.rg}, Cidade ID: {pessoa.cidade_id}, Tipo ID: {pessoa.tipo_id}
+              Nome: {pessoa.nome}, Rua: {pessoa.rua}, Nº: {pessoa.numero}, RG: {pessoa.rg}, Cidade ID: {pessoa.cidade_id}, Tipo Sanguineo ID: {pessoa.tipo_id}
             </span>
             <div>
               <button onClick={() => { setId(pessoa.id); setNome(pessoa.nome); setRua(pessoa.rua); setNumero(pessoa.numero); setRg(pessoa.rg); setCidadeId(String(pessoa.cidade_id)); setTipoId(String(pessoa.tipo_id)); }}>Editar</button>

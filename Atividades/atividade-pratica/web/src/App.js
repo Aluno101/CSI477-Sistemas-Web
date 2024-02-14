@@ -30,7 +30,7 @@ function App() {
 
 function Home() {
   return (
-    <><h1>Sistema de Doaçãoes</h1>
+    <><h1>Sistema de Doações</h1>
       <p> Sua contribuição salva vidas! </p></>
   )
 }
