@@ -1,0 +1,28 @@
+/* FormStyle.css */
+/* Outras definições permanecem as mesmas */
+
+/* FormStyle.css */
+/* Mantenha as configurações anteriores e adicione/ajuste as seguintes */
+
+li {
+  display: flex;
+  justify-content: space-between; /* Mantém os elementos espaçados uniformemente */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li > span {
+  flex: 1; /* Faz o texto ocupar o máximo de espaço, empurrando os botões para a direita */
+  margin-right: 10px; /* Espaço entre o texto e os botões */
+}
+
+li button {
+  margin-left: 10px; /* Espaçamento entre os botões */
+}
+
+
+/* Resto do CSS permanece inalterado */

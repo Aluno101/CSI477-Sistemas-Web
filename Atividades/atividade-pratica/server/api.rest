@@ -1,0 +1,227 @@
+# TESTE DE ESTADOS
+
+###
+GET http://localhost:5000/estados
+
+###
+GET http://localhost:5000/estados/5
+
+###
+POST http://localhost:5000/estados
+Content-Type: application/json
+
+{
+    "nome": "Tocantinsssss",
+    "sigla": "TOS"
+}
+
+###
+PUT http://localhost:5000/estados
+Content-Type: application/json
+
+{
+    "id": 14,
+    "nome": "Tocatins",
+    "sigla": "TOS"
+}
+
+###
+DELETE http://localhost:5000/estados
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+# TESTE DE CIDADES
+
+###
+GET http://localhost:5000/cidades
+
+###
+GET http://localhost:5000/cidades/1
+
+###
+POST http://localhost:5000/cidades
+Content-Type: application/json
+
+{
+    "nome" : "João Monlevade",
+    "estado_id": 1
+
+}
+
+###
+PUT http://localhost:5000/cidades
+Content-Type: application/json
+
+{
+    "id": 3,
+    "nome" : "São Paulo",
+    "estado_id": 2
+
+}
+
+###
+DELETE  http://localhost:5000/cidades
+Content-Type: application/json
+
+{
+    "id": 3
+}
+
+
+# TESTE DE LOCAL COLETA
+
+###
+GET http://localhost:5000/localColeta
+
+###
+GET http://localhost:5000/localColeta/1
+
+###
+POST http://localhost:5000/localColeta
+Content-Type: application/json
+
+{
+    "nome": "Central de Coleta ABC",
+    "rua": "Rua dos Coletadores II",
+    "numero": "321",
+    "cidade_id": 2
+}
+
+###
+PUT http://localhost:5000/localColeta
+Content-Type: application/json
+
+{
+    "id": 1,
+    "nome": "Central de Coleta Atualizada XYZ",
+    "rua": "Rua dos Coletadores VI",
+    "numero": "101",
+    "cidade_id": 4
+}
+
+
+###
+DELETE http://localhost:5000/localColeta
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+
+# TESTE DE DOACOES
+
+###
+GET http://localhost:5000/doacoes
+
+###
+GET http://localhost:5000/doacoes/1
+
+###
+POST http://localhost:5000/doacoes
+Content-Type: application/json
+
+{
+    "pessoa_id": 2,
+    "local_id": 2,
+    "data": "12/02/2024"
+}
+
+###
+PUT http://localhost:5000/doacoes
+Content-Type: application/json
+
+{
+    "id": 1,
+    "pessoa_id": 2,
+    "local_id": 2,
+    "data": "13-02-2024"
+}
+
+###
+DELETE http://localhost:5000/doacoes
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+
+# TESTE DE PESSOA
+
+###
+GET http://localhost:5000/pessoas
+
+###
+GET http://localhost:5000/pessoas/1
+
+###
+POST http://localhost:5000/pessoas
+Content-Type: application/json
+
+{
+    "nome": "João Silva",
+    "rua": "Rua tal",
+    "numero": "1221",
+    "rg": "MG-3577000",
+    "cidade_id": 1,
+    "tipo_id": 2
+}
+
+###
+PUT http://localhost:5000/pessoas
+Content-Type: application/json
+
+{
+    "id": 2,
+    "nome": "João Silva Atualizado",
+    "cidade_id": 1,
+    "tipo_id": 2
+}
+
+###
+DELETE http://localhost:5000/pessoas
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+
+# TESTE DE TIPOSANGUINEO
+
+###
+GET http://localhost:5000/tiposSanguineos
+
+###
+GET http://localhost:5000/tiposSanguineos/1
+
+###
+POST http://localhost:5000/tiposSanguineos
+Content-Type: application/json
+
+{
+    "tipo": "A+",
+    "fator": "3.14"
+}
+
+###
+PUT http://localhost:5000/tiposSanguineos
+Content-Type: application/json
+
+{
+    "id": 1,
+    "tipo": "A-"
+}
+
+###
+DELETE http://localhost:5000/tiposSanguineos
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
