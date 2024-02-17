@@ -1,0 +1,26 @@
+li {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li > span {
+  flex: 1; 
+}
+
+li button {
+  margin-left: 10px; 
+}
+
+.voted {
+  color: green;
+}
+
+.not-voted {
+  color: red;
+}

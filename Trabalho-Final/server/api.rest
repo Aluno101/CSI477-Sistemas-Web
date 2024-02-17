@@ -1,0 +1,85 @@
+# TESTE DE CANDIDATE
+
+# Listar todos os candidatos
+###
+GET http://localhost:5000/candidates
+
+# Buscar candidato pelo ID
+###
+GET http://localhost:5000/candidates/5
+
+# Criar novo candidato
+###
+POST http://localhost:5000/candidates/candidates
+Content-Type: application/json
+
+{
+    "name": "Carlos Ferreira",
+    "votes": 0
+}
+
+# Atualizar candidato pelo ID
+###
+PUT http://localhost:5000/candidates/5
+Content-Type: application/json
+
+{
+    "name": "Carlos Ferreira Atualizado",
+    "votes": 100
+}
+
+# Deletar candidato pelo ID
+###
+DELETE http://localhost:5000/candidates/5
+
+
+
+
+
+# TESTE DE USERS
+
+# Listar todos os usuários
+###
+GET http://localhost:5000/users
+
+# Buscar usuário pelo ID
+###
+GET http://localhost:5000/users/novoemail@example.com
+
+# Criar novo usuário
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "email": "novoTesteemail@example.com",
+    "voted": false
+}
+
+# Atualizar usuário pelo ID
+###
+PUT http://localhost:5000/users/5
+Content-Type: application/json
+
+{
+    "email": "emailatualizado@example.com",
+    "voted": true
+}
+
+# Deletar usuário pelo ID
+###
+DELETE http://localhost:5000/users/1
+
+
+
+
+# TESTE PARA VOTAÇÃO
+
+###
+POST http://localhost:5000/vote
+Content-Type: application/json
+
+{
+    "userId": 2,
+    "candidateId": 6
+}
